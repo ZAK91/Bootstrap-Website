@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pc Wallpaper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+    </div>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+   
+
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning border-bottom border border-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Welcom</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- end of navbar -->
+
+    <!-- carousel  -->
+
+    <div id="carouselExampleInterval" class="carousel slide border-bottom border border-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1800">
+                <img src="assets/imgs/28.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="1800">
+                <img src="assets/imgs/37.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="1800">
+                <img src="assets/imgs/41.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- End of carousel  -->
+
+    <!-- First row -->
+    <div class="row">
+        <div class="col-4 p-2">
+            <a class="ripple" href="assets/imgs/5.jpg">
+
+                <img alt="example" class="w-100" style="border-radius: 20px;" src="assets/imgs/6.jpg" />
+            </a>
+
+        </div>
+
+        <div class="col-4  p-2">
+            <a class="ripple" href="assets/imgs/11.jpg">
+
+                <img alt="example" class="w-100" style="border-radius: 20px;" src="assets/imgs/12.jpg" />
+            </a>
+
+        </div>
+        <div class="col-4 p-2">
+
+            <a class="ripple" href="assets/imgs/21.jpg">
+
+                <img alt="example" class="w-100" style="border-radius: 20px;" src="assets/imgs/22.jpg" />
+            </a>
+        </div>
+
+    </div>
+    <!-- End first row -->
+
+    <!--Ssecond row -->
+
+    <div class="row">
+        <div class="col-4 p-2">
+
+            <a class="ripple" href="assets/imgs/25.jpg">
+
+                <img alt="example" class="w-100" style="border-radius: 20px;" src="assets/imgs/26.jpg" />
+            </a>
+        </div>
+
+        <div class="col-4 p-2">
+
+            <a class="ripple" href="assets/imgs/23.jpg">
+
+                <img alt="example" class="w-100" style="border-radius: 20px;" src="assets/imgs/24.jpg" />
+            </a>
+        </div>
+
+        <div class="col-4 p-2">
+
+            <a class="ripple" href="assets/imgs/31.jpg">
+
+                <img alt="example" class="w-100" style="border-radius: 20px;" src="assets/imgs/32.jpg" />
+            </a>
+        </div>
+
+
+    </div>
+    <!-- End of second row -->
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+   
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+</body>
+
+
+
+</html>
